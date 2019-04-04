@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Atk-8H-Fow"/>
+                        <viewControllerLayoutGuide type="bottom" id="EXR-O3-Rfh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obe-nw-2hn" userLabel="区域参照对比">
+                                <rect key="frame" x="107" y="120" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O28-S4-zDB" customClass="TapButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="redTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKn-bW-LrM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="O28-S4-zDB" firstAttribute="top" secondItem="obe-nw-2hn" secondAttribute="top" id="Esi-J0-iuV"/>
+                                    <constraint firstAttribute="width" constant="200" id="VGS-oq-PBm"/>
+                                    <constraint firstAttribute="bottom" secondItem="O28-S4-zDB" secondAttribute="bottom" id="b8P-Ks-nZb"/>
+                                    <constraint firstAttribute="trailing" secondItem="O28-S4-zDB" secondAttribute="trailing" id="bOQ-Td-WbW"/>
+                                    <constraint firstAttribute="height" constant="200" id="gGv-UR-mjH"/>
+                                    <constraint firstItem="O28-S4-zDB" firstAttribute="leading" secondItem="obe-nw-2hn" secondAttribute="leading" id="jX1-lC-TDx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-d0-DV3" userLabel="区域参照对比">
+                                <rect key="frame" x="107" y="340" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWZ-6Y-fwI">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="greenTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RS-sS-wOe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6pi-uT-LtL"/>
+                                    <constraint firstAttribute="trailing" secondItem="AWZ-6Y-fwI" secondAttribute="trailing" id="HRJ-z7-XVm"/>
+                                    <constraint firstAttribute="width" constant="200" id="Ob8-ki-7jL"/>
+                                    <constraint firstAttribute="bottom" secondItem="AWZ-6Y-fwI" secondAttribute="bottom" id="i8t-g1-ilR"/>
+                                    <constraint firstItem="AWZ-6Y-fwI" firstAttribute="leading" secondItem="bbP-d0-DV3" secondAttribute="leading" id="pDf-bO-TtB"/>
+                                    <constraint firstItem="AWZ-6Y-fwI" firstAttribute="top" secondItem="bbP-d0-DV3" secondAttribute="top" id="xeG-kB-yZS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="obe-nw-2hn" firstAttribute="top" secondItem="Atk-8H-Fow" secondAttribute="bottom" constant="100" id="j3h-jn-miQ"/>
+                            <constraint firstItem="obe-nw-2hn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="raH-GC-SRN"/>
+                            <constraint firstItem="bbP-d0-DV3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRd-Z3-LBn"/>
+                            <constraint firstItem="bbP-d0-DV3" firstAttribute="top" secondItem="obe-nw-2hn" secondAttribute="bottom" constant="20" id="zkv-sR-co6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greenBtn" destination="AWZ-6Y-fwI" id="Rae-ix-cw3"/>
+                        <outlet property="redBtn" destination="O28-S4-zDB" id="lyd-pJ-njX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
